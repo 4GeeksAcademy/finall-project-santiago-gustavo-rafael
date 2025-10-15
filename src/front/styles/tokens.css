@@ -1,0 +1,24 @@
+/* src/front/styles/tokens.css */
+:root{
+  --orange: #FF6A00;
+  --orange-2: #FF8A2A;
+  --purple-900:#160d2c;
+}
+
+.rise-btn{
+  appearance:none; border:0; outline:0; cursor:pointer;
+  border-radius:14px; font-weight:800; letter-spacing:.02em;
+  transition:transform .15s ease, box-shadow .2s ease, opacity .2s ease;
+  color:#fff; background: var(--orange);
+  box-shadow: 0 10px 24px rgba(255,106,0,.35);
+}
+.rise-btn:disabled{ opacity:.55; cursor:not-allowed; }
+
+.rise-btn--primary{
+  background: linear-gradient(135deg, var(--orange) 0%, var(--orange-2) 100%);
+}
+.rise-btn--md{ padding:.9rem 1.4rem; font-size:1rem; }
+.rise-btn--lg{ padding:1rem 2rem; font-size:1.05rem; }
+.rise-btn--block{ width:100%; max-width:360px; }
+.rise-btn:hover:not(:disabled){ transform: translateY(-2px); }
+.rise-btn:active:not(:disabled){ transform: translateY(0); }
