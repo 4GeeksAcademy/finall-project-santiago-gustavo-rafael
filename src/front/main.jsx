@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'  // Global styles for your application
@@ -27,3 +28,23 @@ const Main = () => {
 
 // Render the Main component into the root DOM element.
 ReactDOM.createRoot(document.getElementById('root')).render(<Main />)
+=======
+
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./styles/index.css";
+import "./styles/tokens.css";
+import { BrowserRouter } from "react-router-dom";
+import AppRouter from "./routes/AppRouter.jsx";
+import { AuthProvider } from "./context/AuthContext.jsx"; 
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <BrowserRouter>
+      <AuthProvider> 
+        <AppRouter />
+      </AuthProvider>
+    </BrowserRouter>
+  </React.StrictMode>
+);
+>>>>>>> Stashed changes

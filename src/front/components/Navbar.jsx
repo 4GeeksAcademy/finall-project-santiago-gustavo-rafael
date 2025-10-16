@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export const Navbar = () => {
+export const AppSidebar = () => {
 
 	return (
 		<nav className="navbar navbar-light bg-light">
